@@ -5,15 +5,23 @@ Django settings for Smart_Salon project.
 import os
 from pathlib import Path
 import dj_database_url
-from decouple import config
+from decouple import config, Csv
 
 # Base directory
 BASE_DIR = Path(__file__).resolve().parent
 
 # Security settings
+
+
+# Secret Key
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-temp-key')
-DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='*').split(',')
+
+# Debug Mode
+DEBUG = config('DEBUG', default=True, cast=bool)
+
+# Allowed Hosts (handle both local + Render)
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='127.0.0.1,localhost').split(',')
+
 
 # Installed apps
 INSTALLED_APPS = [
