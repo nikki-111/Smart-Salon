@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;800&display=swap');
+
+:root {
+    --header-height: 5rem;
+
+    --main-color: #f7e6df;
+    --first-color: #75492b;
+    --second-color: #dfd6a7;
+    --white-color: #fff;
+    --black-color: #151515;
+
+    --font-cursive: 'Great Vibes', cursive;
+    --font-body: 'Montserrat', sans-serif;
+
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 0.813rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: 50px 15px;
+}
+
+.appointment-container {
+    max-width: 700px;
+    margin: auto;
+    background-color: var(--main-color);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-container h1 {
+    font-family: var(--font-cursive);
+    color: var(--first-color);
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--second-color);
+    border-radius: 8px;
+    background-color: var(--white-color);
+    font-size: 0.9rem;
+    color: var(--black-color);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--first-color);
+    outline: none;
+}
+
+.submit-btn {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.85rem;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color: var(--second-color);
+    color: var(--black-color);
+}

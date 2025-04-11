@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart_Salon</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="{% static 'images/logo1.6.png' %}"height="90" width="90">
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="{% url 'home' %}" class="nav-link active">home</a></li>
+                    <li><a href="{% url 'about' %}" class="nav-link">About</a></li>
+                    <li><a href="{% url 'services' %}" class="nav-link">services</a></li>
+                    <li><a href="{% url 'package' %}" class="nav-link">package</a></li>
+                    <li><a href="{% url 'Gallery' %}"class="nav-link">gallery</a></li>
+                    <li><a href="{% url 'testimonial' %}"class="nav-link">testimonial</a></li>
+                    <li><a href="{% url 'chatbot' %}"class="nav-link">chatbot</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <li class="fa-solid fa-bars"></li>
+            </div>
+        </div>
+    </header>  
+    
+    {% block content %}
+    {% endblock %}
+    <footer class="footer" id="contact">
+        <div class="footer-list">
+            <div class="footer-data">
+                <h1><a href=""><img src="{% static 'images/logo2.3.png' %}"height="230" width="200"></a></h1>
+                <div class="footer-data-social">
+                    <a href="https://www.facebook.com/niki.ng.359
+                    " target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_missnikki1/
+                    " target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href=" https://wa.me/919827839841" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="YOUR_SNAPCHAT_URL" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+            <div class="footer-data">
+                <h2>address</h2>
+                <p>Khargone <br>Madhya Pradesh</p> 
+            </div>
+            <div class="footer-data">
+                <h2>we opend</h2>
+                <p>Monday to Saturday <br>9:00 am to 11:00 pm</p>
+            </div>
+            <div class="footer-data">
+                <h2>Contact</h2>
+                <p><a href="tel:+919827839841">(+91) 9827839841</a></p>
+                <p><a href="tel:+916263932213">(+91) 6263932213</a></p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&Copy; All Rights Reserved</p>
+            <span>Created by NIKITA</span>
+        </div>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/server.js' %}"></script>
+    <script src="{% static 'js/footer.js' %}"></script>
+    <script src="{% static 'js/logo.js' %}"></script>
+</body>
+</html>

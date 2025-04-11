@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Salon Chatbot</title>
+    <link rel="stylesheet" href="{% static 'chatbot/chatbot.css' %}">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <div id="chatbox">
+            <h2 class="chat-title">Welcome to Smart Salon Chatbot 💬</h2>
+            <div id="messages"></div>
+            <div class="input-area">
+                <input type="text" id="user_input" placeholder="Ask me something..." />
+                <button type="button" class="btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'chatbot/chatbot.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}

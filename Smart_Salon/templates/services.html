@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!-- start service section -->
+ <section class="services" id="services">
+    <div class="services-content">
+        <div class="section-title">
+            <h1>Check Our Services &</h1>
+            <span>what we do</span>
+        </div>
+        <div class="services-content-description">
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.1.png' %}" alt="{{ service.Manicure }}">                    <p>Manicure</p>
+                </div>
+                <p>{{ service.Manicure }}</p>
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.2.jpg' %}" alt="{{ service.Padicure }}"> <p>Padicure</p>
+                </div>
+                    <p>{{ service.Padicure }}</p>
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.3.jpg' %}"alt="{{ service.Makeup }}"><p>Makeup</p>
+                </div>
+                    <p>{{ service.Makeup }}</p>
+                
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.4.jpg' %}" alt="{{ service.Hairstyle }}"><p>Hairstyle</p>
+                </div> 
+                    <p>{{ service.Hairstyle }}</p>
+                
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.4.4.jpg' %}"alt="{{ service.Haircut }}"><p>Haircut</p>
+                </div>
+                    <p>{{ service.Haircut }}</p>
+                
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.6.jpg' %}"alt="{{ service.EyebroDesign }}"><p>Eyebro</p>
+                </div>
+                    <p>{{ service.EyebroDesign }}</p>
+                
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.7.jpg' %}"alt="{{ service.Waxing }}"><p>Waxing</p>
+                </div>
+                    <p>{{ service.Waxing }}</p>
+                
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.8.jpg' %}"alt="{{ service.Facial }}"><p>Facial</p>
+                </div>
+                    <p>{{ service.Facial }}</p>
+                
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <img src="{% static 'images/ser1.9.jpg' %}"alt="{{ service.NailArt}}"><p>NailArt</p>
+                </div>
+                    <p>{{ service.NailArt }}</p>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+
+{% endblock %}

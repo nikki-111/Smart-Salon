@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="payment-success">
+    <h2>Payment Successful!</h2>
+    <p>Thank you for your payment.</p>
+    <p>A receipt has been sent to your email.</p>
+    <a href="{% url 'home' %}" class="home-link">Return to Home</a>
+</div>
+{% endblock %}

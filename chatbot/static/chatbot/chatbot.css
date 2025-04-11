@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;800&display=swap');
+
+:root {
+    --header-height: 5rem;
+
+    --main-color: #f7e6df;
+    --first-color: #75492b;
+    --second-color: #dfd6a7;
+    --white-color: #fff;
+    --black-color: #151515;
+
+    --font-cursive: 'Great Vibes', cursive;
+    --font-body: 'Montserrat', sans-serif;
+
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.813rem;
+    --small-font-size: 0.813rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+}
+
+body {
+    background-color: var(--white-color);
+    font-size: var(--normal-font-size);
+}
+
+#chatbox {
+    width: 60%;
+    margin: 50px auto;
+    padding: 60px;
+    background: var(--main-color);
+    border: 2px solid var(--first-color);
+    border-radius: 60px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.chat-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - var(--header-height));
+    padding-top: var(--header-height); /* agar header fixed ho to */
+}
+
+
+.chat-title {
+    text-align: center;
+    font-family: var(--font-cursive);
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: 20px;
+}
+
+#messages {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    border: 1px solid var(--second-color);
+}
+
+.msg {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.4;
+}
+
+.user {
+    background-color: var(--second-color);
+    text-align: right;
+}
+
+.bot {
+    background-color: #eee;
+    color: var(--black-color);
+    text-align: left;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#user_input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid var(--second-color);
+    font-size: var(--normal-font-size);
+}
+
+.btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border: 1px solid var(--first-color);
+    border-radius: 25px;
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--second-color);
+    color: var(--black-color);
+    border-color: var(--second-color);
+}

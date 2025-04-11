@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}  
+{% if messages %}
+<div class="messages">
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+    <!--Start Home Section-->
+    <section class="home">
+        <div class="container">
+            <div class="home-img">
+                <img src="{% static 'images/image2.6.png' %}" width="460" height="550">
+            </div>
+            <div class="home-content">
+                <h1>Your big day <br><span>in Style</span></h1>
+                <p>Come see our bride's corner and take the oppertunity to schedule you date</p>
+                <a href="{% url 'appointments' %}" class="btn btn-outline">
+                    <i class="fab fa-whatsapp"></i>
+                    schedule your time 
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
